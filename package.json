@@ -8,6 +8,7 @@
     "css": "^2.2.1",
     "enzyme": "^2.8.0",
     "jest": "^19.0.2",
+    "jest-environment-jsdom": "18.1.0",
     "loader": "^2.1.1",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.5.1",
