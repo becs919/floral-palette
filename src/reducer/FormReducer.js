@@ -1,8 +1,6 @@
 const initialState = {
   season: '',
-  colorOne: '',
-  colorTwo: '',
-  colorThree: ''
+  colors: []
 };
 
 export const data = (state = initialState, action) => {
