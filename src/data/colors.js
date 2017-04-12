@@ -2,7 +2,6 @@ module.exports =
   [
     "White",
     "Ivory",
-    "Peach",
     "Yellow",
     "Coral",
     "Orange",
@@ -10,8 +9,8 @@ module.exports =
     "Maroon",
     "Purple",
     "Pink",
-    "Dusty Blue",
-    "Navy Blue",
+    "CornflowerBlue",
+    " Navy",
     "Green",
     "Brown"
   ]
