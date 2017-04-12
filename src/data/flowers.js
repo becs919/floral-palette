@@ -12,7 +12,6 @@ module.exports =
       "colors": [
         "White",
         "Ivory",
-        "Peach",
         "Yellow",
         "Coral",
         "Orange",
@@ -35,7 +34,6 @@ module.exports =
       "colors": [
         "White",
         "Ivory",
-        "Peach",
         "Yellow",
         "Coral",
         "Orange",
@@ -58,7 +56,6 @@ module.exports =
       "colors": [
         "White",
         "Ivory",
-        "Peach",
         "Yellow",
         "Coral",
         "Orange",
@@ -80,7 +77,6 @@ module.exports =
       "colors": [
         "White",
         "Ivory",
-        "Peach",
         "Yellow",
         "Orange",
         "Red",
@@ -104,7 +100,7 @@ module.exports =
         "Maroon",
         "Purple",
         "Pink",
-        "Dusty Blue",
+        "CornflowerBlue",
         "Green"
       ]
     },
@@ -117,7 +113,6 @@ module.exports =
       ],
       "colors": [
         "White",
-        "Peach",
         "Yellow",
         "Coral",
         "Maroon",
@@ -134,7 +129,6 @@ module.exports =
       ],
       "colors": [
         "White",
-        "Peach",
         "Yellow",
         "Coral",
         "Orange",
@@ -167,7 +161,6 @@ module.exports =
       ],
       "colors": [
         "White",
-        "Peach",
         "Maroon",
         "Pink"
       ]
@@ -198,7 +191,6 @@ module.exports =
       "colors": [
         "White",
         "Ivory",
-        "Peach",
         "Yellow",
         "Coral",
         "Orange",
@@ -276,7 +268,6 @@ module.exports =
       "colors": [
         "White",
         "Ivory",
-        "Peach",
         "Purple",
         "Pink"
       ]
@@ -306,8 +297,8 @@ module.exports =
         "Fall"
       ],
       "colors": [
-        "Dusty Blue",
-        "Navy Blue"
+        "CornflowerBlue",
+        " Navy"
       ]
     },
     {
