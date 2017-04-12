@@ -8,11 +8,6 @@
   align-items: center;
 }
 
- .form-container select {
-  width: 400px;
-  margin: 10px;
-}
-
 .form-container button {
     outline: none;
     border: 1px solid #091221;
@@ -20,7 +15,7 @@
     background-color: #feb890;
     height: 30px;
     margin: 20px;
-    width: 60px;
+    width: 80px;
 }
 
 .form-container button:hover {
@@ -38,5 +33,22 @@
 
 .form-container h3 {
   font-size: 25px;
+  margin: 30px 10px 10px 10px;
+}
+
+.season-button {
+  display: inline-block;
+}
+
+.colors-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.color {
+  height: 20px;
+  width: 200px;
   margin: 10px;
 }
