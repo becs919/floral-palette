@@ -20,7 +20,8 @@ module.exports =
         "Purple",
         "Pink",
         "Green"
-      ]
+      ],
+      "image": "https://s-media-cache-ak0.pinimg.com/originals/ab/63/48/ab6348bc0c78678173ddcc2563bc66e4.jpg"
     },
     {
       "id": 2,
@@ -42,7 +43,8 @@ module.exports =
         "Purple",
         "Pink",
         "Green"
-      ]
+      ],
+      "image": "http://profresh.com.au/wp-content/uploads/2015/07/Gravity-Top.jpg"
     },
     {
       "id": 3,
@@ -63,7 +65,8 @@ module.exports =
         "Maroon",
         "Purple",
         "Pink"
-      ]
+      ],
+      "image": "https://images-na.ssl-images-amazon.com/images/I/51-3zmIPAaL.jpg"
     },
     {
       "id": 4,
@@ -84,7 +87,8 @@ module.exports =
         "Purple",
         "Pink",
         "Green",
-      ]
+      ],
+      "image": "https://www.directgardening.com/424-thickbox_default/mixed-calla-lily-.jpg"
     },
     {
       "id": 5,
@@ -102,7 +106,8 @@ module.exports =
         "Pink",
         "CornflowerBlue",
         "Green"
-      ]
+      ],
+      "image": "http://www.gardendebut.com/_ccLib/image/plants/DETA4-2794.jpg"
     },
     {
       "id": 6,
@@ -117,7 +122,8 @@ module.exports =
         "Coral",
         "Maroon",
         "Pink"
-      ]
+      ],
+      "image": "http://www.homedepot.com/catalog/productImages/400/29/29d2bdee-d702-4b84-a613-1a6fe72a57e7_400.jpg"
     },
     {
       "id": 7,
@@ -136,7 +142,8 @@ module.exports =
         "Maroon",
         "Pink",
         "Green"
-      ]
+      ],
+      "image": "http://www.edensblooms.com/files/2165020/uploaded/ranunculusmix.jpg"
     },
     {
       "id": 8,
@@ -150,7 +157,8 @@ module.exports =
       "colors": [
         "Maroon",
         "Green"
-      ]
+      ],
+      "image": "http://img1.sunset.timeinc.net/sites/default/files/styles/400xvariable/public/image/2016/06/main/amaranth-fall-flowers-green-tails-1012.jpg?itok=9x3mWu5_"
     },
     {
       "id": 9,
@@ -163,7 +171,8 @@ module.exports =
         "White",
         "Maroon",
         "Pink"
-      ]
+      ],
+      "image": "https://s-media-cache-ak0.pinimg.com/564x/aa/28/57/aa28570ff57b55fed994edd0ebabd241.jpg"
     },
     {
       "id": 10,
@@ -179,7 +188,8 @@ module.exports =
         "Purple",
         "Maroon",
         "Pink"
-      ]
+      ],
+      "image": "https://s-media-cache-ak0.pinimg.com/736x/eb/a2/6e/eba26ed75bc6412b06962edf3502ba1c.jpg"
     },
     {
       "id": 11,
@@ -199,7 +209,8 @@ module.exports =
         "Purple",
         "Pink",
         "Brown"
-      ]
+      ],
+      "image": "https://assets-production-webvanta-com.s3-us-west-2.amazonaws.com/000000/51/74/slider_detail/uploads/plant/1450969638-722edff85cddc1999/25297970_m.jpg"
     },
     {
       "id": 12,
@@ -211,7 +222,8 @@ module.exports =
       ],
       "colors": [
         "Yellow"
-      ]
+      ],
+      "image": "https://cdn.shopify.com/s/files/1/1008/4432/products/1_b51650a5-7048-4a94-ba8a-baf0d7212475_2048x2048.jpeg?v=1481827845"
     },
     {
       "id": 13,
@@ -230,7 +242,8 @@ module.exports =
         "Red",
         "Purple",
         "Pink"
-      ]
+      ],
+      "image": "http://i.ebayimg.com/00/s/MTAwMFgxMDAw/z/RMMAAOSwLVZVwjKz/$_1.JPG"
     },
     {
       "id": 14,
@@ -240,7 +253,8 @@ module.exports =
       ],
       "colors": [
         "Purple"
-      ]
+      ],
+      "image": "https://9f713baab175865ec8fd-a244153ed31b2286a7b17497bbc33e0e.ssl.cf1.rackcdn.com/0-essential-reasons-we-love-lavender.jpg"
     },
     {
       "id": 15,
@@ -254,7 +268,8 @@ module.exports =
       "colors": [
         "Green",
         "Maroon"
-      ]
+      ],
+      "image": "https://www.picclickimg.com/d/l400/pict/222237019840_/150pcs-Mixed-Succulent-Seeds-Lithops-Rare-Living-Stones.jpg"
     },
     {
       "id": 16,
@@ -270,7 +285,8 @@ module.exports =
         "Ivory",
         "Purple",
         "Pink"
-      ]
+      ],
+      "image": "https://s-media-cache-ak0.pinimg.com/736x/ba/f7/ca/baf7caa892809d9ff14ae39f77449a10.jpg"
     },
     {
       "id": 17,
@@ -285,7 +301,8 @@ module.exports =
         "Yellow",
         "Brown",
         "Orange"
-      ]
+      ],
+      "image": "https://www.directgardening.com/7851-large_default/decorative-sunflower-mix.jpg"
     },
     {
       "id": 18,
@@ -299,7 +316,8 @@ module.exports =
       "colors": [
         "CornflowerBlue",
         " Navy"
-      ]
+      ],
+      "image": "http://www.estabrooksonline.com/images/products/tiny_jackpot.jpg"
     },
     {
       "id": 19,
@@ -314,7 +332,8 @@ module.exports =
         "White",
         "Pink",
         "Purple"
-      ]
+      ],
+      "image": "https://s-media-cache-ak0.pinimg.com/564x/e6/09/75/e609750d3958046ad3ecd34d13a202df.jpg"
     },
     {
       "id": 20,
@@ -332,6 +351,7 @@ module.exports =
         "Purple",
         "Orange",
         "Yellow"
-      ]
+      ],
+      "image": "http://www.smwholesaleflowers.com/catalogimages/MullringBrookWaxflower.jpg"
     }
   ]

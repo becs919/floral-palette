@@ -13,7 +13,7 @@ export default class Flowers extends Component {
         <div className="color-palette">
           {data.colors.map((color, i) => <div key={i} style={{backgroundColor: data.colors[i]}}>{ color }</div>)}
         </div>
-        {flowers.map((flower, i) => flower.colors.includes(data.colors[0] || data.colors[1] || data.colors[2] )? <p key={i}>{flower.flower_name}, {flower.seasons}, {flower.colors}</p>: null)}
+        {flowers.map((flower, i) => (flower.colors.includes(data.colors[0] || data.colors[1] || data.colors[2] ) && (flower.seasons.includes(data.season)))? <div className="indv-flower"key={i}><p>{flower.flower_name}</p> <p>{flower.seasons}</p><p>{flower.colors}</p><img src={flower.image}/></div>: null)}
       </div>
     )
   }
