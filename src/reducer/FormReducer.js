@@ -9,5 +9,5 @@ export const data = (state = initialState, action) => {
       return Object.assign({}, state, action.data);
     default:
       return state;
-  };
+  }
 };

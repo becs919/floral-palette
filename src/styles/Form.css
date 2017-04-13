@@ -14,8 +14,8 @@
     padding: 6px;
     background-color: #feb890;
     height: 30px;
-    margin: 20px;
-    width: 80px;
+    margin: 15px;
+    width: 90px;
 }
 
 .form-container button:hover {
@@ -45,10 +45,10 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .color {
   height: 20px;
   width: 200px;
-  margin: 10px;
 }

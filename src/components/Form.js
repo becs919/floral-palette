@@ -22,12 +22,26 @@ export default class Form extends Component {
   }
 
   handleColorClick(e) {
+    this.state.colors.length <= 3 ? this.addColor(e): this.removeColor(e);
+  }
+
+  addColor(e){
     let color = e.target.innerText;
-    if (this.state.colors.length <= 2) {
+
+    if (this.state.colors.length < 3 && !this.state.colors.includes(color)) {
       this.state.colors.push(color);
+    } else if (!this.state.colors.includes(color)) {
+      this.state.colors.shift()
+      this.state.colors.push(color)
+    } else if (this.state.colors.includes(color)) {
+      this.state.colors.splice(this.state.colors.indexOf(color), 1 )
     }
-    // if you add more than three - it unshifts the first one and adds the new one?
-    // or when you click it again, it removes it from state
+    this.setState({colors: this.state.colors})
+  }
+
+  removeColor(e){
+    this.state.colors.splice(0,1)
+    this.setState({colors: this.state.colors})
   }
 
   render() {
@@ -45,11 +59,10 @@ export default class Form extends Component {
           {colorData.map((color, i) => <button style={{backgroundColor: color}} className="color" onClick={ (e) => this.handleColorClick(e) } key={ i }>{color}</button>)}
         </div>
 
-        <NavLink to ="/flowers">
-          <button className="Submit" onClick={() => this.props.saveForm(this.state) }>Submit</button>
-        </NavLink>
+        <NavLink to="/flowers">
+          <button className="submit" onClick={() => this.props.saveForm(this.state) }>Submit</button>
+          </NavLink>
       </div>
-
     )
   }
 };
