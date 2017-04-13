@@ -19,7 +19,9 @@
 }
 
 .form-container button:hover {
-    background-color:#8bafbd;
+  /*background-color:#8bafbd;*/
+  border-width: 2px;
+  font-weight: 700;
 }
 
 .form-container h2, h3 {
