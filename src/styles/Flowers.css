@@ -1,5 +1,5 @@
 .flowers-div {
-  background-color: rgba(255,247,206,0.7);
+  background-color: rgba(255,255,255,0.7);
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -10,19 +10,43 @@
 
 .flowers-div h2 {
   font-family: 'Sacramento', cursive;
-  font-size: 25px;
+  font-size: 30px;
   margin: 10px;
 }
 
 .color-palette div {
   display: inline-block;
   text-align: center;
-  height: 50px;
+  height: 100px;
   width: 200px;
-  margin: 10px;
-  padding-top: 25px;
+  padding-top: 0px;
+}
+
+.color-palette p {
+  font-family: 'Sacramento', cursive;
+  font-size: 25px;
 }
 
 .indv-flower img {
   height: 100px;
+  width: 100px;
+}
+
+.indv-flower {
+  /*display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;*/
+  margin-bottom: 15px;
+  margin-top: 40px;
+  width: 20%;
+  word-wrap: normal;
+}
+
+div p {
+  margin: 0px;
+}
+
+.flower-name {
+  font-family: 'Sacramento', cursive;
+  font-size: 30px;
 }

@@ -1,5 +1,5 @@
 .form-container {
-  background-color: rgba(255,247,206,0.7);
+  background-color: rgba(255,255,255,0.7);
   margin: 20px;
   padding: 20px;
   display: flex;
@@ -18,10 +18,21 @@
     width: 90px;
 }
 
-.form-container button:hover {
-  /*background-color:#8bafbd;*/
-  border-width: 2px;
-  font-weight: 700;
+.form-container .season-button:hover {
+  background-color:#8bafbd;
+}
+
+.form-container .submit:hover {
+  background-color:#8bafbd;
+}
+
+
+.form-container .activeSeasonButton {
+  background-color: #8bafbd;
+}
+
+.colors-div .activeColorButton {
+  background-color: #8bafbd;
 }
 
 .form-container h2, h3 {
