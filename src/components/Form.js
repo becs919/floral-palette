@@ -17,11 +17,11 @@ export default class Form extends Component {
 
   handleSeasonClick(e) {
     this.setState({ season: e.target.innerText });
-  }
+  };
 
   handleColorClick(e) {
     this.state.colors.length <= 3 ? this.addColor(e): this.removeColor(e);
-  }
+  };
 
   addColor(e){
     let color = e.target.innerText;
@@ -35,12 +35,12 @@ export default class Form extends Component {
       this.state.colors.splice(this.state.colors.indexOf(color), 1 );
     }
     this.setState({colors: this.state.colors})
-  }
+  };
 
   removeColor(e){
     this.state.colors.splice(0,1);
     this.setState({colors: this.state.colors});
-  }
+  };
 
 
   render() {
@@ -85,7 +85,7 @@ export default class Form extends Component {
           </NavLink>
       </div>
     )
-  }
+  };
 };
 
 Form.propTypes = {
