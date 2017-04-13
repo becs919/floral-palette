@@ -9,8 +9,7 @@ module.exports =
     "Maroon",
     "Purple",
     "Pink",
-    "CornflowerBlue",
-    " Navy",
+    "Blue",
     "Green",
     "Brown"
   ]

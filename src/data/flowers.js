@@ -104,7 +104,7 @@ module.exports =
         "Maroon",
         "Purple",
         "Pink",
-        "CornflowerBlue",
+        "Blue",
         "Green"
       ],
       "image": "http://www.gardendebut.com/_ccLib/image/plants/DETA4-2794.jpg"
@@ -314,8 +314,7 @@ module.exports =
         "Fall"
       ],
       "colors": [
-        "CornflowerBlue",
-        " Navy"
+        "Blue"
       ],
       "image": "http://www.estabrooksonline.com/images/products/tiny_jackpot.jpg"
     },
