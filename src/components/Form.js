@@ -42,24 +42,42 @@ export default class Form extends Component {
     this.setState({colors: this.state.colors});
   }
 
-  buttonStyles(color) {
-    console.log(color)
-    this.style={backgroundColor: color}
-  }
 
   render() {
-    return(
+
+    const seasons = seasonData.map((season, i) => {
+      return (
+        <button className={this.state.season.includes(season) ? "activeSeasonButton" : "season-button"} onClick={ (e) => this.handleSeasonClick(e) } key={ i }>{season}
+        </button>
+      )
+    });
+
+    const selectedColors = this.state.colors.map((color, i) => {
+        return (<div key={i} className="selected-colors">{color}</div>)
+      });
+
+    const colors = colorData.map((color, i) => {
+      return (
+        <div style={{backgroundColor: color, color: color}} className={this.state.colors.includes(color) ? "activeColorButton" : "color"} onClick={ (e) => this.handleColorClick(e) } key={ i }>{color}</div>
+      )
+    });
+
+    return (
       <div className="form-container">
         <h2>Tell Us About Your Wedding</h2>
 
         <h3>Season</h3>
-        <div className="season">
-          {seasonData.map((season, i) => <button className={this.state.season.includes(season) ? "activeSeasonButton" : "season-button"} onClick={ (e) => this.handleSeasonClick(e) } key={ i }>{season}</button>)}
+        <div className="seasons">
+          { seasons }
         </div>
 
         <h3>Pick up to 3 Colors</h3>
+        <div className="selected-colors-div">
+          { selectedColors }
+        </div>
+
         <div className="colors-div">
-          {colorData.map((color, i) => <button className={this.state.colors.includes(color) ? "activeColorButton" : "color"} onMouseOver={() => this.buttonStyles(color)} onClick={ (e) => this.handleColorClick(e) } key={ i }>{color}</button>)}
+          { colors }
         </div>
 
         <NavLink to="/flowers">
@@ -74,5 +92,3 @@ Form.propTypes = {
   season: React.PropTypes.string,
   colors: React.PropTypes.array
 };
-
-// style={{backgroundColor: color}}
