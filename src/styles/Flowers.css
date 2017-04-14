@@ -5,13 +5,13 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  align-items: center;
   margin-top: 100px;
+  text-align: center;
 }
 
 .flowers-div h2 {
   font-family: 'Parisienne', cursive;
-  font-size: 30px;
+  font-size: 35px;
   margin: 10px;
 }
 
@@ -20,39 +20,15 @@
   text-align: center;
   height: 100px;
   width: 200px;
-  padding-top: 0px;
+  padding-top: 10px;
 }
 
 .color-palette p {
-  font-family: 'Parisienne', cursive;
-  font-size: 25px;
+  font-size: 17px;
 }
 
-.indv-flower img {
-  margin: 5px;
-  height: 100px;
-  width: 100px;
-}
-
-.indv-flower p {
-  margin: 5px;
-}
-
-.indv-flower {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-top: 40px;
-  word-wrap: normal;
-}
-
-div p {
-  margin: 0px;
-}
-
-.flower-name {
-  font-family: 'Parisienne', cursive;
-  font-size: 30px;
+@media screen and (max-width: 360px) {
+    .flowers-div h2 {
+        font-size: 30px;
+    }
 }

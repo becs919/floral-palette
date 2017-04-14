@@ -24,3 +24,9 @@ body.scrolled header {
   background-color: rgba(255,255,255,1);
   transition: background-color .10s;
 }
+
+@media screen and (max-width: 360px) {
+    .header-text {
+        font-size: 40px;
+    }
+}
