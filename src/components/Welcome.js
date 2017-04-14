@@ -9,7 +9,7 @@ const Welcome = () => {
       <div className="welcome-text">
         <h2>Our Story</h2>
         <p>
-          Florem ipsum bell heather tasmanian blue gum mistletoe love lies bleeding honeysuckle. Safflower spring cinquefoil wormwood thrift, radnor lily false goat’s beard. Lavender scorpion orchid painter’s palette prince of Wales feather pink heath rosebay willowherb, lily. Moth orchid flame lily singapore orchid hop. Dill twinflower.Flower calla lily snowdrop dandelion bluebell cockscomb anemone. Waxflower flame tip safari sunset, gorse buttercup. Marigold, floss flower statice glory lily bell heather, sunflower. Queen Anne’s lace globeflower sea holly amaryllis brodiaea snow on the mountain bells of Ireland. Radnor lily.
+          Floral Palette is designed to help bride's and groom's planning their wedding florals a painless process. Whether you are preparing to meet with your florist, or having DIY florals at your wedding, Floral Palette will give you all the knowledge you need. It is as easy as selecting the season your wedding will be in and up to three colors from your color palette. Floral Palette will give you a list of flowers that are available during the season of your wedding and their available colors. Bring this list to your florist or have it ready to purchase the flowers on your own! 
         </p>
       </div>
       <NavLink to="/form"><button className="begin-button">Begin</button></NavLink>

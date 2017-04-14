@@ -34,12 +34,12 @@ export default class Form extends Component {
     } else if (this.state.colors.includes(color)) {
       this.state.colors.splice(this.state.colors.indexOf(color), 1 );
     }
-    this.setState({colors: this.state.colors})
+    this.setState({ colors: this.state.colors })
   };
 
   removeColor(e){
     this.state.colors.splice(0,1);
-    this.setState({colors: this.state.colors});
+    this.setState({ colors: this.state.colors });
   };
 
 
@@ -47,18 +47,18 @@ export default class Form extends Component {
 
     const seasons = seasonData.map((season, i) => {
       return (
-        <button className={this.state.season.includes(season) ? "activeSeasonButton" : "season-button"} onClick={ (e) => this.handleSeasonClick(e) } key={ i }>{season}
+        <button className={ this.state.season.includes(season) ? "activeSeasonButton" : "season-button" } onClick={ (e) => this.handleSeasonClick(e) } key={ i }>{ season }
         </button>
       )
     });
 
     const selectedColors = this.state.colors.map((color, i) => {
-        return (<div key={i} className="selected-colors">{color}</div>)
+        return (<div key={ i } className="selected-colors">{ color }</div>)
       });
 
     const colors = colorData.map((color, i) => {
       return (
-        <div style={{backgroundColor: color, color: color}} className={this.state.colors.includes(color) ? "activeColorButton" : "color"} onClick={ (e) => this.handleColorClick(e) } key={ i }>{color}</div>
+        <div style={{ backgroundColor: color }} className={ this.state.colors.includes(color) ? "activeColorButton" : "color" } onClick={ (e) => this.handleColorClick(e) } key={ i }>{ color }</div>
       )
     });
 
@@ -80,9 +80,9 @@ export default class Form extends Component {
           { colors }
         </div>
 
-        <NavLink to="/flowers">
-          <button className="submit" onClick={() => this.props.saveForm(this.state) }>Submit</button>
-          </NavLink>
+        { (this.state.season && this.state.colors[0]) && <NavLink to="/flowers">
+          <button className="submit" onClick={ () => this.props.saveForm(this.state) }>Submit</button>
+          </NavLink>}
       </div>
     )
   };
