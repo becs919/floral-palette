@@ -1,5 +1,35 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import App from '../../components/App';
+import { shallow, mount } from 'enzyme';
 
-it.skip();
+import App from '../../components/App';
+import Welcome from '../../components/Welcome'
+
+describe('App', () => {
+
+  it('renders one div', () => {
+    const wrapper = shallow(<App />)
+
+    expect(wrapper.find('div').length).toBe(1);
+  });
+
+  it('renders one Header component', () => {
+    const wrapper = shallow(<App />);
+
+    expect(wrapper.find('Header').length).toBe(1);
+  });
+
+  it('should return App Component with 3 Routes', () => {
+    const wrapper = shallow(<App />);
+
+    expect(wrapper.find('Route').length).toBe(3)
+  });
+
+  it('should store flowers', () => {
+    const wrapper = shallow(<App />);
+    let mockState = {
+      flowers: []
+    };
+
+    expect(wrapper.state()).toMatchObject(mockState);
+  });
+});
