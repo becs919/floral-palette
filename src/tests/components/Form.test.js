@@ -54,11 +54,60 @@ describe('Form', () => {
     const wrapper = mount(<Form />);
 
     const btn = wrapper.find('.color').first();
-
     btn.simulate('click', { target: { innerText: "Red"} });
 
     expect(wrapper.state().colors[0]).toBe('Red');
     expect(wrapper.find('.activeColorButton').length).toBe(1);
+
+    const btn2 = wrapper.find('.color').last();
+    btn.simulate('click', { target: { innerText: "Blue"} });
+
+    expect(wrapper.state().colors).toEqual(['Red', 'Blue']);
+    expect(wrapper.find('.activeColorButton').length).toBe(2);
+  });
+
+  it('should remove color if in state and you click again', () => {
+    const wrapper = mount(<Form />);
+
+    const btn = wrapper.find('.color').first();
+    btn.simulate('click', { target: { innerText: "Red"} });
+
+    expect(wrapper.state().colors[0]).toBe('Red');
+    expect(wrapper.find('.activeColorButton').length).toBe(1);
+
+    const btn2 = wrapper.find('.color').first();
+    btn.simulate('click', { target: { innerText: "Red"} });
+
+    expect(wrapper.state().colors).toEqual([]);
+    expect(wrapper.find('.activeColorButton').length).toBe(0);
+  });
+
+  it('should remove first color if 4th color is selected, aka doesnt let you add more than three colors', () => {
+    const wrapper = mount(<Form />);
+
+    const btn = wrapper.find('.color').first();
+    btn.simulate('click', { target: { innerText: "Red"} });
+
+    expect(wrapper.state().colors[0]).toBe('Red');
+    expect(wrapper.find('.activeColorButton').length).toBe(1);
+
+    const btn2 = wrapper.find('.color').first();
+    btn.simulate('click', { target: { innerText: "Blue"} });
+
+    expect(wrapper.state().colors).toEqual(['Red', 'Blue']);
+    expect(wrapper.find('.activeColorButton').length).toBe(2);
+
+    const btn3 = wrapper.find('.color').first();
+    btn.simulate('click', { target: { innerText: "Green"} });
+
+    expect(wrapper.state().colors).toEqual(['Red', 'Blue', 'Green']);
+    expect(wrapper.find('.activeColorButton').length).toBe(3);
+
+    const btn4 = wrapper.find('.color').first();
+    btn.simulate('click', { target: { innerText: "Purple"} });
+
+    expect(wrapper.state().colors).toEqual(['Blue', 'Green', 'Purple']);
+    expect(wrapper.find('.activeColorButton').length).toBe(3);
   });
 
   it('should render NavLink when color and season are selected', () => {
