@@ -23,13 +23,4 @@ describe('App', () => {
 
     expect(wrapper.find('Route').length).toBe(3)
   });
-
-  it('should store flowers', () => {
-    const wrapper = shallow(<App />);
-    let mockState = {
-      flowers: []
-    };
-
-    expect(wrapper.state()).toMatchObject(mockState);
-  });
 });

@@ -1,23 +1,24 @@
 .indv-flower img {
   margin: 5px;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
+  float: left;
+  padding: 10px;
 }
 
 .indv-flower p {
-  margin: 7px;
+  /*text wrap*/
 }
 
 .indv-flower {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 15px;
-  margin-top: 40px;
+  margin-top: 30px;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 5px gray;
+  height: 180px;
 }
 
 .flower-name {
   font-family: 'Parisienne', cursive;
-  font-size: 30px;
+  font-size: 36px;
+  padding: 10px;
 }
