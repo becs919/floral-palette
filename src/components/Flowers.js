@@ -10,7 +10,7 @@ export default class Flowers extends Component {
 
     const colorPalette = data.colors.map((color, i) => {
       return (
-        <div key={ i }><div className="palette"style={{ backgroundColor: data.colors[i] }}></div><p>{ color }</p></div>
+        <div className="palette-div" key={ i }><div className="palette"style={{ backgroundColor: data.colors[i] }}></div><p className="color-name">{ color }</p></div>
       )
     });
 
@@ -42,7 +42,7 @@ export default class Flowers extends Component {
 
         <h2>{ data.season } Wedding Floral Palette</h2>
 
-        <div className="color-palette">
+        <div key={ Date.now() } className="colors">
           { colorPalette }
         </div>
 

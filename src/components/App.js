@@ -10,12 +10,6 @@ import FlowersContainer from '../containers/FlowersContainer.js';
 
 
 export default class App extends Component {
-  constructor(props) {
-    super()
-    this.state = {
-      flowers: []
-    }
-  }
 
   componentDidMount() {
     this.props.addFlowers(FlowerData);
@@ -32,7 +26,3 @@ export default class App extends Component {
     )
   }
 }
-
-App.propTypes = {
-  flowers: React.PropTypes.array,
-};
