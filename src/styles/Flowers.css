@@ -45,7 +45,6 @@
 .color-hex {
   font-size: 12px;
   margin: 2px;
-  color: gray;
 }
 
 @media screen and (max-width: 600px) {

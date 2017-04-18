@@ -2,7 +2,7 @@ module.exports =
   [
     ["Brown", "#521515"],
     ["White", "#FFFFFF"],
-    ["Ivory", "#FFFFF0"],
+    ["Ivory", "#FAFBD1"],
     ["Purple", "#8C198C"],
     ["Pink", "#FFC0CB"],
     ["Blue", "#4C4CFF"],
