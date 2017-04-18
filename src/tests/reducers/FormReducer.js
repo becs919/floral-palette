@@ -16,7 +16,7 @@ describe('forms reducer', () => {
 
     const mockData = {
       season:'Summer',
-      colors: ["Orange", "Maroon", "Purple"]
+      colors: ["Orange", "Burgundy", "Purple"]
     };
 
     const action = {

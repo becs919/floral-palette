@@ -15,7 +15,7 @@ describe("FlowersCard", () => {
       ],
       "colors": [
         "White",
-        "Maroon",
+        "Burgundy",
         "Purple"
       ],
       "image": "http://www.gardendebut.com/_ccLib/image/plants/DETA4-2794.jpg"
@@ -23,7 +23,7 @@ describe("FlowersCard", () => {
 
   const mockData = {
     season:'Summer',
-    colors: ["Orange", "Maroon", "Purple"]
+    colors: ["Orange", "Burgundy", "Purple"]
   };
 
 
@@ -45,7 +45,7 @@ describe("FlowersCard", () => {
 
     expect(wrapper.find('p').length).toBe(3)
     expect(wrapper.find('p').first().props().children[1]).toBe('Hydrangea')
-    expect(wrapper.find('p').last().props().children[1]).toEqual(['White', 'Maroon', 'Purple'])
+    expect(wrapper.find('p').last().props().children[1]).toEqual("White, Burgundy, Purple")
   });
 
 });

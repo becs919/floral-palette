@@ -19,7 +19,7 @@ describe('flowers reducer', () => {
         "colors": [
           "Orange",
           "Red",
-          "Maroon"
+          "Burgundy"
         ],
         "image": "https://www.directgardening.com/424-thickbox_default/mixed-calla-lily-.jpg"
       },
@@ -32,7 +32,7 @@ describe('flowers reducer', () => {
         ],
         "colors": [
           "White",
-          "Maroon",
+          "Burgundy",
           "Purple"
         ],
         "image": "http://www.gardendebut.com/_ccLib/image/plants/DETA4-2794.jpg"

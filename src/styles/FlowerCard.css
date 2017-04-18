@@ -1,24 +1,58 @@
 .indv-flower img {
-  margin: 5px;
-  height: 150px;
-  width: 150px;
+  width: 200px;
   float: left;
-  padding: 10px;
-}
-
-.indv-flower p {
-  /*text wrap*/
+  margin-left: 10px;
+  margin: 15px;
+  box-shadow: 0 0 5px gray;
 }
 
 .indv-flower {
-  margin-top: 30px;
   background-color: rgba(255,255,255,0.8);
   box-shadow: 0 0 5px gray;
-  height: 180px;
+  height: 230px;
+  margin: 10px;
 }
 
 .flower-name {
   font-family: 'Parisienne', cursive;
   font-size: 36px;
-  padding: 10px;
+  padding-top: 15px;
+}
+
+.indv-flower p {
+  margin: 7px;
+  padding: 5px;
+}
+
+.flower-info {
+  padding-left: 230px;
+  padding-top: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .indv-flower img {
+    width: 90px;
+    float: none;
+  }
+
+  .indv-flower {
+    height: 250px;
+    padding: 0px;
+    text-align: center;
+  }
+
+  .indv-flower .flower-name {
+    font-size: 25px;
+  }
+
+  .indv-flower p {
+    padding: 0px;
+    font-size: 12px;
+  }
+
+  .flower-info {
+    padding-left: 0px;
+  }
+
 }

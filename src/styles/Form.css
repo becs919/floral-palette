@@ -12,13 +12,12 @@
 }
 
 .form-container button {
-    outline: none;
-    border: 1px solid #091221;
-    padding: 6px;
-    background-color: inherit;
-    height: 30px;
-    margin: 15px;
-    width: 90px;
+  outline: none;
+  border: 1px solid #091221;
+  background-color: inherit;
+  height: 25px;
+  margin: 15px;
+  width: 75px;
 }
 
 .form-container .season-button:hover {
@@ -33,26 +32,12 @@
   background-color: lightcoral;
 }
 
-.colors-div .activeColorButton {
-  border: 1px solid gray;
-  font-size: 0px;
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  border-radius: 50%;
-  box-shadow: 0 0 5px gray;
-}
-
 .colors-div .color {
   font-size: 0px;
   width: 40px;
   height: 40px;
   margin: 5px;
   border-radius: 50%;
-}
-
-.selected-colors {
-  display: inline-block;
 }
 
 .form-container h2 {
@@ -70,22 +55,72 @@
   margin: 10px;
 }
 
-
 .colors-div {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 10px;
 }
 
-.selected-colors-div div {
-  display: inline-block;
+.selected-colors-div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: center;
   margin: 5px;
+}
+
+.palette-div-form {
+  height: 120px;
+  width: 80px;
+  text-align: center;
+  margin: 2px;
+  border: 1px solid gray;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 5px gray;
+}
+
+.palette-form {
+  border-bottom: 1px solid gray;
+  height: 80px;
+  width: 80px;
+}
+
+.color-name-form {
+  font-size: 12px;
+  margin: 5px;
+}
+
+.color-hex-form {
+  font-size: 10px;
+  margin: 5px;
+  color: gray;
 }
 
 @media screen and (max-width: 360px) {
     .form-container h3 {
         font-size: 20px;
+    }
+
+    .palette-div-form {
+      height: 95px;
+      width: 55px;
+      margin: 1px;
+    }
+
+    .palette-form {
+      height: 55px;
+      width: 55px;
+    }
+
+    .color-name-form {
+      font-size: 10px;
+    }
+
+    .color-hex-form {
+      font-size: 9px;
     }
 }
