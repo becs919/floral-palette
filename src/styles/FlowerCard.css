@@ -29,6 +29,15 @@
   padding-top: 10px;
 }
 
+.fav-button {
+  outline: none;
+  border: 1px solid #091221;
+  padding: 6px;
+  background-color: inherit;
+  height: 30px;
+  margin-left: 15px;
+}
+
 
 @media screen and (max-width: 600px) {
   .indv-flower img {

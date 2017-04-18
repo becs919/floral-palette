@@ -10,6 +10,7 @@ import createHistory from 'history/createBrowserHistory';
 
 import { flowers } from './reducer/FlowersReducer.js';
 import { data } from './reducer/FormReducer.js'
+import { favorites } from './reducer/FavoritesReducer.js'
 
 import AppContainer from './containers/AppContainer';
 
@@ -23,6 +24,7 @@ const store = createStore(
   combineReducers({
     flowers,
     data,
+    favorites,
     router: routerReducer,
   }), devTools, applyMiddleware(middleware)
 )

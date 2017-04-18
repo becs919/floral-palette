@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-// import { bindActionCreators } from 'redux';
+
 import Form from '../components/Form.js';
 import * as actions from '../actions/actions.js';
 

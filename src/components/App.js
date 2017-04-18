@@ -8,7 +8,6 @@ import Welcome from './Welcome.js';
 import FormContainer from '../containers/FormContainer.js';
 import FlowersContainer from '../containers/FlowersContainer.js';
 
-
 export default class App extends Component {
 
   componentDidMount() {
@@ -21,7 +20,7 @@ export default class App extends Component {
         <Header />
         <Route exact path="/" component={ Welcome }></Route>
         <Route exact path="/form" component={ FormContainer }></Route>
-        <Route exact path="/flowers" component={ FlowersContainer }></Route>
+        <Route path="/flowers" component={ FlowersContainer }></Route>
       </div>
     )
   }
