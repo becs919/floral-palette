@@ -38,6 +38,7 @@ export default class Flowers extends Component {
               <FlowerCard data={ data }
                           flower={ flower }
                           key={ flower.id }
+
               />
             )
         };

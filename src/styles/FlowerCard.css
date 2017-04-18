@@ -32,8 +32,9 @@
 
 @media screen and (max-width: 600px) {
   .indv-flower img {
-    width: 90px;
+    width: 110px;
     float: none;
+    margin-bottom: 0px;
   }
 
   .indv-flower {
@@ -53,6 +54,7 @@
 
   .flower-info {
     padding-left: 0px;
+    padding-top: 0px;
   }
 
 }
