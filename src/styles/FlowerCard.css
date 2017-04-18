@@ -1,7 +1,7 @@
 .indv-flower img {
   margin: 5px;
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   float: left;
   padding: 10px;
 }
@@ -11,10 +11,9 @@
 }
 
 .indv-flower {
-  margin-top: 30px;
   background-color: rgba(255,255,255,0.8);
   box-shadow: 0 0 5px gray;
-  height: 180px;
+  height: 230px;
 }
 
 .flower-name {
