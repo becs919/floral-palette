@@ -16,12 +16,12 @@ module.exports =
         "Coral",
         "Orange",
         "Red",
-        "Maroon",
+        "Burgundy",
         "Purple",
         "Pink",
         "Green"
       ],
-      "image": "http://i.imgur.com/PdsZ8oj.jpg"
+      "image": "http://i.imgur.com/U34OtS2.jpg"
     },
     {
       "id": 2,
@@ -39,12 +39,12 @@ module.exports =
         "Coral",
         "Orange",
         "Red",
-        "Maroon",
+        "Burgundy",
         "Purple",
         "Pink",
         "Green"
       ],
-      "image": "http://i.imgur.com/tr0Umtg.jpg"
+      "image": "http://i.imgur.com/ZcYBlIp.jpg?1"
     },
     {
       "id": 3,
@@ -62,7 +62,7 @@ module.exports =
         "Coral",
         "Orange",
         "Red",
-        "Maroon",
+        "Burgundy",
         "Purple",
         "Pink"
       ],
@@ -83,7 +83,7 @@ module.exports =
         "Yellow",
         "Orange",
         "Red",
-        "Maroon",
+        "Burgundy",
         "Purple",
         "Pink",
         "Green",
@@ -101,7 +101,7 @@ module.exports =
       ],
       "colors": [
         "White",
-        "Maroon",
+        "Burgundy",
         "Purple",
         "Pink",
         "Blue",
@@ -120,10 +120,10 @@ module.exports =
         "White",
         "Yellow",
         "Coral",
-        "Maroon",
+        "Burgundy",
         "Pink"
       ],
-      "image": "http://i.imgur.com/IcSMlvD.jpg"
+      "image": "http://i.imgur.com/Cwo5AXr.jpg"
     },
     {
       "id": 7,
@@ -139,7 +139,7 @@ module.exports =
         "Coral",
         "Orange",
         "Red",
-        "Maroon",
+        "Burgundy",
         "Pink",
         "Green"
       ],
@@ -155,7 +155,7 @@ module.exports =
         "Fall"
       ],
       "colors": [
-        "Maroon",
+        "Burgundy",
         "Green"
       ],
       "image": "http://img1.sunset.timeinc.net/sites/default/files/styles/400xvariable/public/image/2016/06/main/amaranth-fall-flowers-green-tails-1012.jpg?itok=9x3mWu5_"
@@ -169,7 +169,7 @@ module.exports =
       ],
       "colors": [
         "White",
-        "Maroon",
+        "Burgundy",
         "Pink"
       ],
       "image": "https://s-media-cache-ak0.pinimg.com/564x/aa/28/57/aa28570ff57b55fed994edd0ebabd241.jpg"
@@ -186,7 +186,7 @@ module.exports =
         "White",
         "Red",
         "Purple",
-        "Maroon",
+        "Burgundy",
         "Pink"
       ],
       "image": "http://i.imgur.com/juxVAmJ.jpg"
@@ -205,7 +205,7 @@ module.exports =
         "Coral",
         "Orange",
         "Red",
-        "Maroon",
+        "Burgundy",
         "Purple",
         "Pink",
         "Brown"
@@ -267,7 +267,7 @@ module.exports =
       ],
       "colors": [
         "Green",
-        "Maroon"
+        "Burgundy"
       ],
       "image": "http://i.imgur.com/L0oCkgd.jpg"
     },
@@ -316,7 +316,7 @@ module.exports =
       "colors": [
         "Blue"
       ],
-      "image": "http://i.imgur.com/qLQXchr.jpg"
+      "image": "http://i.imgur.com/b4y0gSO.jpg"
     },
     {
       "id": 19,
@@ -352,5 +352,19 @@ module.exports =
         "Yellow"
       ],
       "image": "http://i.imgur.com/Hgrb6oN.jpg"
+    },
+    {
+      "id": 21,
+      "flower_name": "Air Plant",
+      "seasons": [
+        "Winter",
+        "Spring",
+        "Summer",
+        "Fall"
+      ],
+      "colors": [
+        "Green",
+      ],
+      "image": "http://i.imgur.com/qArkNRv.jpg"
     }
   ]

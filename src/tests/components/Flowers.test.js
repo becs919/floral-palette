@@ -15,7 +15,7 @@ describe("Flowers", () => {
       "colors": [
         "Orange",
         "Red",
-        "Maroon"
+        "Burgundy"
       ],
       "image": "https://www.directgardening.com/424-thickbox_default/mixed-calla-lily-.jpg"
     },
@@ -28,7 +28,7 @@ describe("Flowers", () => {
       ],
       "colors": [
         "White",
-        "Maroon",
+        "Burgundy",
         "Purple"
       ],
       "image": "http://www.gardendebut.com/_ccLib/image/plants/DETA4-2794.jpg"
@@ -37,7 +37,7 @@ describe("Flowers", () => {
 
   const mockData = {
     season:'Summer',
-    colors: ["Orange", "Maroon", "Purple"]
+    colors: ["Orange", "Burgundy", "Purple"]
   };
 
   function setup() {
@@ -73,12 +73,10 @@ describe("Flowers", () => {
     expect(wrapper.find('.palette').length).toBe(3)
   });
 
-  it('should display color names', () => {
+  it('should display color names and hex colors', () => {
     const { wrapper } = setup()
 
-    expect(wrapper.find('p').length).toBe(3)
-    expect(wrapper.find('p').first().props().children).toBe('Orange')
-    expect(wrapper.find('p').last().props().children).toBe('Purple')
+    expect(wrapper.find('p').length).toBe(6)
   });
 
   it('should list 1 matching FlowerCards component', () => {

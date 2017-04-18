@@ -20,7 +20,7 @@ export default class Form extends Component {
   };
 
   handleColorClick(e) {
-    this.state.colors.length <= 3 ? this.addColor(e): this.removeColor(e);
+    this.state.colors.length <= 3 ? this.addColor(e): null ;
   };
 
   addColor(e){
@@ -37,28 +37,47 @@ export default class Form extends Component {
     this.setState({ colors: this.state.colors })
   };
 
-  removeColor(e){
-    this.state.colors.splice(0,1);
-    this.setState({ colors: this.state.colors });
-  };
-
 
   render() {
 
     const seasons = seasonData.map((season, i) => {
       return (
-        <button className={ this.state.season.includes(season) ? "activeSeasonButton" : "season-button" } onClick={ (e) => this.handleSeasonClick(e) } key={ i }>{ season }
+        <button className={ this.state.season.includes(season) ? "activeSeasonButton" : "season-button" }
+                onClick={ (e) => this.handleSeasonClick(e) }
+                key={ i }>
+                { season }
         </button>
       )
     });
 
     const selectedColors = this.state.colors.map((color, i) => {
-        return (<div key={ i } className="selected-colors">{ color }</div>)
+        return (
+          <div className="palette-div-form" key={ i }>
+
+            <div className="palette-form"
+                 style={{ backgroundColor: color.split(' ')[1] }}>
+            </div>
+
+            <p className="color-name-form">
+              { color.split(' ')[0] }
+            </p>
+
+            <p className="color-hex-form">
+              { color.split(' ')[1] }
+            </p>
+
+          </div>
+        )
       });
 
     const colors = colorData.map((color, i) => {
       return (
-        <div style={{ backgroundColor: color }} className={ this.state.colors.includes(color) ? "activeColorButton" : "color" } onClick={ (e) => this.handleColorClick(e) } key={ i }>{ color }</div>
+        <div style={{ backgroundColor: colorData[i][1] }}
+             className="color"
+             onClick={ (e) => this.handleColorClick(e) }
+             key={ i }>
+             { colorData[i].join(' ') }
+        </div>
       )
     });
 
@@ -81,8 +100,10 @@ export default class Form extends Component {
         </div>
 
         { (this.state.season && this.state.colors[0]) && <NavLink to="/flowers">
-          <button className="submit" onClick={ () => this.props.saveForm(this.state) }>Submit</button>
-          </NavLink>}
+          <button className="submit"
+                  onClick={ () => this.props.saveForm(this.state) }>Submit
+          </button>
+          </NavLink> }
       </div>
     )
   };

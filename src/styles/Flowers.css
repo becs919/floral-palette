@@ -3,13 +3,11 @@
   margin: 20px;
   padding: 20px;
   margin-top: 100px;
-  /*text-align: center;*/
   box-shadow: 0px 0px 13px grey;
 }
 
 .flowers-div h2 {
   text-align: center;
-  /*font-family: 'Parisienne', cursive;*/
   font-size: 35px;
   font-weight: 300;
   margin: 10px;
@@ -24,7 +22,7 @@
 }
 
 .palette-div {
-  height: 180px;
+  height: 200px;
   width: 150px;
   text-align: center;
   margin: 10px;
@@ -44,24 +42,34 @@
   margin: 5px;
 }
 
-@media screen and (max-width: 360px) {
+.color-hex {
+  font-size: 12px;
+  margin: 2px;
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
     .flowers-div h2 {
         font-size: 25px;
     }
 
     .palette-div {
       height: 90px;
-      width: 70px;
+      width: 55px;
       margin: 2px;
     }
 
     .palette {
-      height: 70px;
-      width: 70px;
+      height: 55px;
+      width: 55px;
     }
 
     .color-name {
+      font-size: 12px;
       margin: 3px;
-      font-size: 10px;
+    }
+
+    .color-hex {
+      font-size: 8px;
     }
 }

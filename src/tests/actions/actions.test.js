@@ -13,7 +13,7 @@ const mockFlowers = [
     "colors": [
       "Orange",
       "Red",
-      "Maroon"
+      "Burgundy"
     ],
     "image": "https://www.directgardening.com/424-thickbox_default/mixed-calla-lily-.jpg"
   },
@@ -26,7 +26,7 @@ const mockFlowers = [
     ],
     "colors": [
       "White",
-      "Maroon",
+      "Burgundy",
       "Purple"
     ],
     "image": "http://www.gardendebut.com/_ccLib/image/plants/DETA4-2794.jpg"
@@ -35,7 +35,7 @@ const mockFlowers = [
 
 const mockData = {
   season:'Summer',
-  colors: ["Orange", "Maroon", "Purple"]
+  colors: ["Orange", "Burgundy", "Purple"]
 };
 
 
