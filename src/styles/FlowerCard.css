@@ -1,9 +1,10 @@
 .indv-flower img {
-  margin: 5px;
-  height: 200px;
   width: 200px;
   float: left;
-  padding: 10px;
+  margin-left: 10px;
+  margin: 15px;
+  box-shadow: 0 0 5px gray;
+
 }
 
 .indv-flower p {
@@ -20,4 +21,13 @@
   font-family: 'Parisienne', cursive;
   font-size: 36px;
   padding: 10px;
+}
+
+.flower-info {
+  padding-left: 280px;
+}
+
+
+@media screen and (max-width: 360px) {
+
 }
