@@ -5,32 +5,28 @@ import FlowerCard from './FlowerCard';
 
 const Favorites = (props) => {
 
-return (
-  <div className="fav-div">
-    {console.log(props.favorites)}
-    {  props.flowers.map((flower, i) => {
+  return (
+    <div className="fav-div">
+      {  props.flowers.map((flower, i) => {
+        if (props.favorites.includes(flower.id)) {
 
-      if (props.favorites.includes(flower.id)) {
+          return (
+            <div key={i} className="flower-card-div">
+              <FlowerCard flower={ flower }
+                key={ flower.id }
+                />
+              <button className="fav-button" onClick={ () => props.removeFav(flower.id) }>Remove</button>
+            </div>
+          )
 
-        return (
+        }
+      })}
 
-          <div key={i} className="flower-card-div">
+      { !props.favorites.length && <p>You have no favorites!</p>}
 
-            <FlowerCard flower={ flower }
-              key={ flower.id }
-              />
+    </div>
+  )
 
-            <button className="fav-button" onClick={ () => props.removeFav(flower.id) }>Remove</button>
-
-          </div>
-
-        )
-
-      }
-    })}
-  </div>
-)
-
-}
+};
 
 export default Favorites;

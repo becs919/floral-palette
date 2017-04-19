@@ -21,7 +21,7 @@ export const saveFav = (favorites) => {
 
 export const removeFav = (id) => {
   return {
-    type: 'REMOVE_FAV',
+    type: 'DELETE_FAV',
     id
   }
 };

@@ -74,4 +74,14 @@ describe('Actions', () => {
     expect(createdAction[0]).toEqual(expectedAction);
   });
 
+  it('DELETE_FAV', () => {
+    let expectedAction = {type: 'DELETE_FAV', id: 1};
+
+    store.dispatch(actions.removeFav(1));
+    let createdAction = store.getActions();
+
+    expect(createdAction.length).toEqual(1);
+    expect(createdAction[0]).toEqual(expectedAction);
+  });
+
 });
