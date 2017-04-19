@@ -21,7 +21,7 @@ module.exports =
         "Pink",
         "Green"
       ],
-      "image": "http://i.imgur.com/U34OtS2.jpg"
+      "image": "http://i.imgur.com/C08gpYy.jpg"
     },
     {
       "id": 2,
@@ -66,7 +66,7 @@ module.exports =
         "Purple",
         "Pink"
       ],
-      "image": "https://images-na.ssl-images-amazon.com/images/I/51-3zmIPAaL.jpg"
+      "image": "http://i.imgur.com/YbMOnh0.jpg"
     },
     {
       "id": 4,
@@ -223,7 +223,7 @@ module.exports =
       "colors": [
         "Yellow"
       ],
-      "image": "https://cdn.shopify.com/s/files/1/1008/4432/products/1_b51650a5-7048-4a94-ba8a-baf0d7212475_2048x2048.jpeg?v=1481827845"
+      "image": "http://i.imgur.com/XhC2CFd.jpg"
     },
     {
       "id": 13,
@@ -286,7 +286,7 @@ module.exports =
         "Purple",
         "Pink"
       ],
-      "image": "https://s-media-cache-ak0.pinimg.com/736x/ba/f7/ca/baf7caa892809d9ff14ae39f77449a10.jpg"
+      "image": "http://i.imgur.com/WcRNxj5.jpg"
     },
     {
       "id": 17,

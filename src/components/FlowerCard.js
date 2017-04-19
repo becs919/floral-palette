@@ -3,7 +3,7 @@ import React from 'react';
 import '../styles/FlowerCard.css';
 
 
-const FlowerCard = ({ data, flower }) => {
+const FlowerCard = ({ flower }) => {
 
   return (
     <div className="indv-flower">

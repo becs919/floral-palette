@@ -11,3 +11,17 @@ export const saveForm = (data) => {
     data
   }
 };
+
+export const saveFav = (favorites) => {
+  return {
+    type: 'SAVE_FAV',
+    favorites
+  }
+};
+
+export const removeFav = (id) => {
+  return {
+    type: 'REMOVE_FAV',
+    id
+  }
+};

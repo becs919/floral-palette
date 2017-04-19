@@ -1,16 +1,24 @@
+.fav-div {
+  background-color: rgba(255,255,255,0.7);
+  margin: 20px;
+  padding: 20px;
+  margin-top: 100px;
+  box-shadow: 0px 0px 13px grey;
+}
+
+.flower-card-div {
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 0 0 5px gray;
+  height: 230px;
+  margin: 10px;
+}
+
 .indv-flower img {
   width: 200px;
   float: left;
   margin-left: 10px;
   margin: 15px;
   box-shadow: 0 0 5px gray;
-}
-
-.indv-flower {
-  background-color: rgba(255,255,255,0.8);
-  box-shadow: 0 0 5px gray;
-  height: 230px;
-  margin: 10px;
 }
 
 .flower-name {
@@ -29,6 +37,15 @@
   padding-top: 10px;
 }
 
+.fav-button {
+  outline: none;
+  border: 1px solid #091221;
+  padding: 6px;
+  background-color: inherit;
+  height: 30px;
+  margin-left: 15px;
+}
+
 
 @media screen and (max-width: 600px) {
   .indv-flower img {
@@ -37,8 +54,8 @@
     margin-bottom: 0px;
   }
 
-  .indv-flower {
-    height: 250px;
+  .flower-card-div {
+    height: 310px;
     padding: 0px;
     text-align: center;
   }
@@ -55,6 +72,10 @@
   .flower-info {
     padding-left: 0px;
     padding-top: 0px;
+  }
+
+  .fav-button {
+    margin: 5px;
   }
 
 }

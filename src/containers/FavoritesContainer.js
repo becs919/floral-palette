@@ -1,4 +1,4 @@
-import Flowers from '../components/Flowers.js';
+import Favorites from '../components/Favorites.js';
 
 import { connect } from 'react-redux';
 import * as actions from '../actions/actions.js';
@@ -9,10 +9,10 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    saveFav: (favorites) => {
-    dispatch(actions.saveFav(favorites))
+    removeFav: (id) => {
+    dispatch(actions.removeFav(id))
     }
   }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Flowers);
+export default connect(mapStateToProps, mapDispatchToProps)(Favorites);
