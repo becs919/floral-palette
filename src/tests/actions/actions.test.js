@@ -38,7 +38,7 @@ const mockData = {
   colors: ["Orange", "Burgundy", "Purple"]
 };
 
-const mockFavs = [1, 2, 3];
+const mockFavs = [5];
 
 
 describe('Actions', () => {
