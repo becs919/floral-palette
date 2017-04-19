@@ -40,10 +40,13 @@ describe("Flowers", () => {
     colors: ["Orange", "Burgundy", "Purple"]
   };
 
+  const mockFav = [1, 2]
+
   function setup() {
     const props = {
       flowers: mockFlowers,
-      data: mockData
+      data: mockData,
+      favorites: mockFav
     };
 
     const wrapper = shallow(<Flowers {...props} />)
@@ -59,6 +62,18 @@ describe("Flowers", () => {
     const { wrapper } = setup()
 
     expect(wrapper.find('.flowers-div').length).toBe(1)
+  });
+
+  it('Flowers should have a state of favorites', () => {
+    const { wrapper } = setup()
+
+    expect(wrapper.state().favorites).toEqual([])
+  });
+
+  it('Flowers should have see favs link', () => {
+    const { wrapper } = setup()
+
+    expect(wrapper.find('a').length).toBe(1)
   });
 
   it('Flowers display season name', () => {

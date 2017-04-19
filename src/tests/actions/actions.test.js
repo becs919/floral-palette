@@ -38,6 +38,8 @@ const mockData = {
   colors: ["Orange", "Burgundy", "Purple"]
 };
 
+const mockFavs = [1, 2, 3];
+
 
 describe('Actions', () => {
   afterEach(()=> store.clearActions());
@@ -56,6 +58,16 @@ describe('Actions', () => {
     let expectedAction = {type: 'SAVE_FORM', data: mockData};
 
     store.dispatch(actions.saveForm(mockData));
+    let createdAction = store.getActions();
+
+    expect(createdAction.length).toEqual(1);
+    expect(createdAction[0]).toEqual(expectedAction);
+  });
+
+  it('SAVE_FAV', () => {
+    let expectedAction = {type: 'SAVE_FAV', favorites: mockFavs};
+
+    store.dispatch(actions.saveFav(mockFavs));
     let createdAction = store.getActions();
 
     expect(createdAction.length).toEqual(1);
