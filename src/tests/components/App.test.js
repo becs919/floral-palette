@@ -21,6 +21,6 @@ describe('App', () => {
   it('should return App Component with 3 Routes', () => {
     const wrapper = shallow(<App />);
 
-    expect(wrapper.find('Route').length).toBe(3)
+    expect(wrapper.find('Route').length).toBe(4)
   });
 });
