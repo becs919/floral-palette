@@ -13,7 +13,7 @@ export default class App extends Component {
 
   componentDidMount() {
     this.props.addFlowers(FlowerData);
-  }
+  };
 
   render() {
     return (

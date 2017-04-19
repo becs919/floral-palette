@@ -3,12 +3,8 @@ export const favorites = (state = [], action) => {
     case 'SAVE_FAV':
       return action.favorites;
     case 'DELETE_FAV':
-      state.favorites.splice(action.id, 1 )
-      return state
+      return state.filter(value => value !== action.id)
     default:
       return state;
   }
-}
-
-
-// state.favorites.filter(i => i !== action.id)
+};
