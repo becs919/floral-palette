@@ -18,3 +18,10 @@ export const saveFav = (favorites) => {
     favorites
   }
 };
+
+export const removeFav = (id) => {
+  return {
+    type: 'REMOVE_FAV',
+    id
+  }
+};

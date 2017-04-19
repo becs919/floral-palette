@@ -13,7 +13,7 @@ export default class Flowers extends Component {
     }
   };
 
-  saveFav( e, id ) {
+  addFav( e, id ) {
 
     !this.state.favorites.includes(id) ? this.state.favorites.push(id) :   this.state.favorites.splice(this.state.favorites.indexOf(id), 1 );
 
@@ -57,30 +57,39 @@ export default class Flowers extends Component {
 
         if ( data.colors[0] && flower.colors.includes(data.colors[0].split(' ')[0]) ) {
             return (
-              <FlowerCard flower={ flower }
-                          key={ flower.id }
-                          handleClick={ (e, id) => this.saveFav(e, id) }
+              <div className="flower-card-div" key={flower.id}>
+                <FlowerCard flower={ flower }
+                  key={ flower.id }
+                  handleClick={ (e, id) => this.addFav(e, id) }
 
-              />
+                  />
+                <button className="fav-button" onClick={ (e, id) => this.addFav(e, flower.id) }>Favorite</button>
+              </div>
             )
         };
 
         if (data.colors[1] && flower.colors.includes(data.colors[1].split(' ')[0])) {
           return (
-            <FlowerCard flower={ flower }
-                        key={ flower.id }
-                        handleClick={ (e, id) => this.saveFav(e, id) }
-            />
+            <div className="flower-card-div" key={flower.id}>
+              <FlowerCard flower={ flower }
+                key={ flower.id }
+                handleClick={ (e, id) => this.addFav(e, id) }
+                />
+              <button className="fav-button" onClick={ (e, id) => this.addFav(e, flower.id) }>Favorite</button>
+            </div>
           )
         };
 
 
         if (data.colors[2] && flower.colors.includes(data.colors[2].split('')[0])) {
           return (
-            <FlowerCard flower={ flower }
-                        key={ flower.id }
-                        handleClick={ (e, id) => this.saveFav(e, id) }
-            />
+            <div className="flower-card-div" key={flower.id}>
+              <FlowerCard flower={ flower }
+                key={ flower.id }
+                handleClick={ (e, id) => this.addFav(e, id) }
+                />
+              <button className="fav-button" onClick={ (e, id) => this.addFav(e, flower.id) }>Favorite</button>
+            </div>
           )
         };
 
@@ -93,7 +102,7 @@ export default class Flowers extends Component {
 
         <h2>{ data.season } Wedding Floral Palette</h2>
 
-        { this.props.favorites && <NavLink to="/favorites">View Favorites</NavLink> }
+        { this.props.favorites.length > 0 && <NavLink to="/favorites">View Favorites</NavLink> }
 
         <div key={ Date.now() }
              className="colors">
