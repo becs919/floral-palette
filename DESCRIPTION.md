@@ -30,3 +30,6 @@ Extensions
 1. Save and email to provided email
 2. Flower/color palette grid
 3. 0 Axe violations
+
+#### Final Notes 
+All in all, I was happy with the outcome of my module 3 personal project. I wasn't able to find an API that I was happy with to source my flower information from, so I decided to hard code the data. As is, Floral Palette only has 22 flowers currently in it's database. I am hoping to expand that as time goes on or experiment with some web scrapping in module 4. I used to work at a floral shop, so the majority of the photos are ones that I took myself. I would have like to have all of the photos be my own, but it is a work in progress. Floral Palette is far from being completed and is still a work in progress. 
